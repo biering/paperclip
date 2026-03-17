@@ -54,5 +54,4 @@ ENV NODE_ENV=production \
 # VOLUME ["/paperclip"]
 EXPOSE 3100
 
-USER node
 CMD ["node", "--import", "./server/node_modules/tsx/dist/loader.mjs", "server/dist/index.js"]
